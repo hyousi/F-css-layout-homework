@@ -12,7 +12,7 @@
   </head>
   <body>
     <nav>
-      <ul>
+      <ul class="navbar">
         <li>Home</li>
         <li>World</li>
         <li>Technology</li>
@@ -28,7 +28,7 @@
 
     <main>
       <section class="blog-nav">
-        <div>
+        <div class="about">
           <h2 class="italic">About</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
@@ -37,7 +37,7 @@
             debitis unde enim porro ab.
           </p>
         </div>
-        <div>
+        <div class="archives">
           <h2 class="italic">Archives</h2>
           <ul>
             <li><a href="">January 2020</a></li>
@@ -55,8 +55,8 @@
       </section>
       <section class="articles">
         <article>
-          <img src="" alt="" class="thumbnail" />
-          <h2>Artible 2</h2>
+          <div class="thumbnail">thumbnail</div>
+          <h2>Artible 1</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
             est illo! Alias placeat distinctio unde quibusdam maiores nisi?
@@ -66,7 +66,18 @@
           <a href="" class="article-detail">View details</a>
         </article>
         <article>
-          <img src="" alt="" class="thumbnail" />
+          <div class="thumbnail">thumbnail</div>
+          <h2>Artible 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+            est illo! Alias placeat distinctio unde quibusdam maiores nisi?
+            Autem, placeat aperiam eius sed magnam mollitia a ratione velit
+            nulla ea!
+          </p>
+          <a href="" class="article-detail">View details</a>
+        </article>
+        <article>
+          <div class="thumbnail">thumbnail</div>
           <h2>Artible 2</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta,
@@ -84,34 +95,23 @@
             cum iure tempora placeat!
           </p>
           <a href="" class="article-detail">View details</a>
-        </article>
-        <article>
-          <img src="" alt="" class="thumbnail" />
-          <h2>Artible 3</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-            est illo! Alias placeat distinctio unde quibusdam maiores nisi?
-            Autem, placeat aperiam eius sed magnam mollitia a ratione velit
-            nulla ea!
-          </p>
-          <a href="" class="article-detail">View details</a>
-        </article>
+        </article>  
       </section>
       <section class="login">
-        <form action="">
-          <input type="email" name="" id="" placeholder="Email address" />
-          <input type="password" name="" id="" placeholder="Password" />
-          <div>
-            <input type="checkbox" name="" id="" />
-            <span>Remember me</span>
+        <form action="" class="login-form">
+          <input type="email" name="" id="" placeholder="Email address" class="email-input"/>
+          <input type="password" name="" id="" placeholder="Password" class="password-input"/>
+          <div class="checkbox-input">
+            <input type="checkbox" name="" id="login-checkbox" />
+            <label for="login-checkbox">Remember me</label>
           </div>
-          <button type="submit">Sign in</button>
+          <button type="submit" class="login-button">Sign in</button>
         </form>
       </section>
     </main>
 
     <footer>
-      <p>Advanced CSS homework by <a href="#">@Your Name</a></p>
+      <div>Advanced CSS homework built by <a href="#">@Your Name</a></div>
       <a href="#">Back to top</a>
     </footer>
   </body>

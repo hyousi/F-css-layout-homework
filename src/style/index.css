@@ -18,3 +18,120 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+/* Header */
+.navbar {
+  background-color: black;
+  color: gainsboro;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2em 1em;
+}
+
+.blog-nav {
+  width: 15%;
+}
+
+.about {
+  background-color: rgb(249, 249, 249);
+  padding: 1em;
+}
+
+.archives {
+  padding: 1em;
+}
+
+.articles {
+  width: 60%;
+  column-count: 2;
+  column-gap: 1em;
+}
+
+article {
+  display: inline-block;
+  border: 1px solid rgb(86, 86, 86);
+  padding: 1em;
+  margin: 0 1em 1em 0;
+}
+
+.thumbnail {
+  background-color: rgb(86, 86, 86);
+  height: 10em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -1em;
+}
+
+.article-detail {
+  color: rgb(48, 125, 248);
+}
+
+.article-detail::after {
+  content: " >>";
+}
+
+.login {
+  align-self: center;
+  width: 20%;
+}
+
+.login-form {
+  background-color: rgb(249, 249, 249);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.login-form input {
+  outline: none;
+  border: 1px solid gray;
+  padding: 1em;
+}
+
+.email-input {
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+.password-input {
+  border-radius: 0 0 0.5em 0.5em;
+}
+
+.checkbox-input {
+  align-self: center;
+  margin: 1em 0;
+}
+
+.login-button {
+  background-color: rgb(48, 125, 248);
+  color: white;
+  border-radius: 0.3em;
+  font-size: 1.2em;
+  border: none;
+  padding: 0.5em 0;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(249, 249, 249);
+  color: gray;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Utilities */
+.italic {
+  font-style: italic;
+}
